@@ -1,0 +1,10 @@
+extends: existence
+message: Include a period at the end of alt tag
+ignorecase: true
+scope:
+  - alt
+level: error
+tokens:
+  - '.*\.'
+
+Todo, doesn't work yet
