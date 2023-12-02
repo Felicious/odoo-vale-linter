@@ -1,0 +1,10 @@
+extends: existence
+message: "Consider replacing '%s'."
+level: suggestion
+ignorecase: true
+# Muta and Mimi don't want to be in my code );
+
+scope:
+  - alt
+tokens:
+  - meow

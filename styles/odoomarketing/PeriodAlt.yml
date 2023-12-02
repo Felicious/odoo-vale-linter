@@ -1,10 +1,8 @@
-extends: existence
-message: Include a period at the end of alt tag
+extends: occurrence
+message: "Include a period at the end of an alt tag."
+level: error
 ignorecase: true
 scope:
   - alt
-level: error
-tokens:
-  - '.*\.'
-
-Todo, doesn't work yet
+min: 1
+token: '\.$'

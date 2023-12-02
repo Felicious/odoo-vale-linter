@@ -8,4 +8,13 @@ Test File
 
 .. image:: win_loss/win-loss-ratio-bar-chart.png
    :align: center
-   :alt: With a period, the PeriodAlt test should ignore this line.
+   :alt: With a period, the PeriodAlt test should ignore this line, meow.
+
+This heading shouldn't trigger anything
+=======================================
+
+This is Chicago
+===============
+
+In Odoo
+-------
