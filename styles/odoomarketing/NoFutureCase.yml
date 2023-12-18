@@ -1,5 +1,5 @@
 extends: existence
-message: Let's refrain from using future tense, unless you're entertaining present choices
+message: "Gentle reminder: avoid future tense, unless entertaining present choices."
 level: suggestion
 ignorecase: true
 tokens:

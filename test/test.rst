@@ -8,13 +8,13 @@ Test File
 
 .. image:: win_loss/win-loss-ratio-bar-chart.png
    :align: center
-   :alt: With a period, the PeriodAlt test should ignore this line, meow.
+   :alt: With a period, the PeriodAlt test ignores this line, meow.
 
 This heading shouldn't trigger anything
 =======================================
 
 This is Chicago
-===============
+---------------
 
 In Odoo
 -------
@@ -26,6 +26,8 @@ You will not like this.
 
 Below the :guilabel:`number keys` is the :guilabel:`location` line, which should read `WH/Stock` by
 
-You should try this!
-
 for for
+
+msidvgswrvg
+
+odoo

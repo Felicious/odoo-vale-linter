@@ -1,13 +1,9 @@
 extends: substitution
-
-message: Consider replacing the contraction, '%s', with '%s'
-
+message: "Consider replacing the contraction, '%s', with '%s'"
 level: warning
-
 ignorecase: false
 
 # swap maps tokens in form of bad: good
-
 swap:
   can't: cannot
   don't: do not
