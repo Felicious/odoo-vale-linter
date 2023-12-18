@@ -18,3 +18,14 @@ This is Chicago
 
 In Odoo
 -------
+
+EAN and UPC identifiers
+-----------------------
+
+You will not like this.
+
+Below the :guilabel:`number keys` is the :guilabel:`location` line, which should read `WH/Stock` by
+
+You should try this!
+
+for for

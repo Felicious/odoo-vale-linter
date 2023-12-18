@@ -1,5 +1,5 @@
 extends: occurrence
-message: "Include a period at the end of an alt tag."
+message: Include a period at the end of an alt tag.
 level: error
 ignorecase: true
 scope:

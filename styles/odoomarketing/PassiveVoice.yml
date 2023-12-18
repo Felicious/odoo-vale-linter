@@ -1,0 +1,11 @@
+extends: existence
+message: Try not to use '%s'. Instead, actively instruct the reader to do something
+level: warning
+ignorecase: false
+tokens:
+  - may
+  - would
+  - could
+  - should
+  - might
+  - possible
