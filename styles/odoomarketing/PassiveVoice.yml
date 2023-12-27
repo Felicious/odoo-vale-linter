@@ -1,5 +1,5 @@
 extends: existence
-message: "Try not to use '%s'. Instead, actively instruct the reader to do something."
+message: "Try not to use '%s'. Instead, actively instruct the reader."
 level: warning
 ignorecase: false
 tokens:

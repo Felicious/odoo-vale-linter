@@ -1,0 +1,15 @@
+extends: existence
+message: Avoid using '%s' or other pronouns.
+level: error
+ignorecase: true
+tokens:
+  - I
+  - me
+  - you
+  - he
+  - him
+  - she
+  - her
+  - we
+  - you
+  - your

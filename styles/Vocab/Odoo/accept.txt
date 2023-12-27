@@ -1,3 +1,4 @@
 kanban
 Odoo
 pricelist
+sublocation

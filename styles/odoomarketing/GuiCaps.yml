@@ -1,0 +1,8 @@
+extends: capitalization
+message: "Double-check that everything in the guilabel is capitalized correctly."
+level: suggestion
+scope: guilabel
+match: $title
+style: AP
+exceptions:
+  - '\b([A-Z][a-z]+)'
