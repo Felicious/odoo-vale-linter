@@ -1,7 +1,8 @@
-extends: occurrence
-message: Consider spelling out the number '%d'
-level: warning
-scope: sentence
-ignorecase: false
-min: 1
-token: '\b\d+\b'
+extends: existence
+message: Let's spell out '%s', unless it's in an example block.
+level: suggestion
+nonword: true
+tokens:
+  - '\d+'
+# TODO: in test_numbers.rst, exclude capturing the number in $15
+
