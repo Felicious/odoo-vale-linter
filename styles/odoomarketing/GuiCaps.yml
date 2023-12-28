@@ -1,8 +1,9 @@
-extends: capitalization
+extends: existence
 message: "Double-check that everything in the guilabel is capitalized correctly."
 level: suggestion
-scope: guilabel
-match: $title
-style: AP
+ignorecase: true
+raw:
+  - ':guilabel:`\([A-Z][a-z]+\)\b`'
+
 exceptions:
   - '\b([A-Z][a-z]+)'

@@ -30,6 +30,9 @@ for for
 
 ms's who'll
 
+.. example::
+   12 apples.
+
 
 For companies with warehouses, **removal strategies** determine which products are taken from the
 warehouse, and when. Removal strategies are typically defined for specific picking operations. This
@@ -50,3 +53,4 @@ removing the oldest stock on-hand, however, it targets the **newest** stock on-h
 Every time an order for products with the :abbr:`LIFO (Last In, First Out)` method is placed, a
 transfer is created for the lot/serial number that has most recently entered the stock (the **last**
 lot/serial number that entered the warehouse's inventory).
+

@@ -34,3 +34,6 @@ WIP rules
   utmost, paramount, etc (can find you more)
 7. Error: sales jargon
   TBD
+
+## Blocks and limitations ):
+1. To understand rst, Vale converts rst to html, then uses html to [check scopes](https://vale.sh/docs/topics/scoping/#types-formats-and-scopes). This means, to check whether all elements in a `guilabel`, an rst-specific tag, for example, we first have to build the doc (run `make fast` in terminal), *inspect* the guilabel element, and see what is output. Answer: :guilabel:`Confirm` is rendered as `<span class="guilabel">Confirm</span>`
