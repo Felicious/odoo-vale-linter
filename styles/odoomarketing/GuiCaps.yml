@@ -3,7 +3,8 @@ message: "Double-check that everything in the guilabel is capitalized correctly.
 level: suggestion
 ignorecase: true
 raw:
-  - ':guilabel:`\([A-Z][a-z]+\)\b`'
+  - ':guilabel:`'
+  - '[A-Z]{1}[A-Z][a-z]+\b`'
 
 exceptions:
   - '\b([A-Z][a-z]+)'

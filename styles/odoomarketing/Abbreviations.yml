@@ -1,7 +1,0 @@
-extends: occurrence
-message: Consider removing '%s'
-level: warning
-scope: example.rst
-ignorecase: false
-min: 1
-token: '12'

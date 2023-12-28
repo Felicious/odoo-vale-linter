@@ -1,0 +1,7 @@
+extends: occurrence
+message: Consider spelling out the number '%d'
+level: warning
+scope: sentence
+ignorecase: false
+min: 1
+token: '\b\d+\b'
