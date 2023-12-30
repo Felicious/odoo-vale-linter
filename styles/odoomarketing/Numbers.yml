@@ -1,8 +1,6 @@
 extends: existence
-message: Let's spell out '%s', unless it's in an example block.
+message: Spell out '%s', unless within an example or code block.
 level: suggestion
 nonword: true
 tokens:
-  - '\d+'
-# TODO: in test_numbers.rst, exclude capturing the number in $15
-
+  - '([\s\n])(\d+)'
