@@ -1,15 +1,19 @@
 extends: existence
-message: Avoid using '%s' or other pronouns.
+message: "'%s' avoid pronouns."
 level: error
 ignorecase: true
 tokens:
   - I
   - me
   - you
-  - he
+  - he/she
+  - s/he
+  - \(s\)he
   - him
-  - she
   - her
   - we
   - you
   - your
+  - yours
+  - you're
+  - youre

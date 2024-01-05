@@ -1,0 +1,14 @@
+extends: existence
+link: 'https://www.odoo.com/documentation/latest/contributing/documentation/content_guidelines.html#grammatical-tenses'
+message: "'%s' is past tense."
+ignorecase: true
+level: suggestion
+raw:
+  - \b(am|are|were|is|was|be)\b\s*
+tokens:
+  - '[\w]+ing'
+  - '[\w]+s'
+  - '[\w]+es'
+  - '[\w]+ed\s+by'
+  - '[\w]+ed\s+with'
+  - '[\w]+ed\s+from'
