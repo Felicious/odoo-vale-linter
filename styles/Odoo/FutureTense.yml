@@ -1,0 +1,11 @@
+extends: existence
+link: 'https://www.odoo.com/documentation/latest/contributing/documentation/content_guidelines.html#grammatical-tenses'
+message: "'%s' is future tense."
+level: suggestion
+ignorecase: true
+tokens:
+  - will be
+  - will
+  - shall
+  - going to
+  - about to

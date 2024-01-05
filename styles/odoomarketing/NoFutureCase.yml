@@ -1,6 +1,0 @@
-extends: existence
-message: "Maybe remove '%s' to write in present tense."
-level: suggestion
-ignorecase: true
-tokens:
-  - will

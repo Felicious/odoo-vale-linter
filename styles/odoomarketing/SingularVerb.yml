@@ -1,7 +1,0 @@
-extends: sequence
-message: Did you mean '%[1]s' are?
-level: warning
-ignorecase: true
-tokens:
-    - tag: NNS | NNPS
-    - pattern: is

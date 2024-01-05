@@ -1,4 +1,0 @@
-kanban
-Odoo
-pricelist
-sublocation

@@ -1,0 +1,28 @@
+extends: capitalization
+link: "https://www.odoo.com/documentation/latest/contributing/documentation/content_guidelines.html#titles-and-headings"
+message: "'%s' should use sentence-style capitalization."
+level: error
+scope: heading
+match: $sentence
+indicators:
+  - ":"
+exceptions:
+  - Azure
+  - CLI
+  - Cosmos
+  - Docker
+  - Emmet
+  - gRPC
+  - Kubernetes
+  - Linux
+  - macOS
+  - Marketplace
+  - MongoDB
+  - REPL
+  - Studio
+  - TypeScript
+  - URLs
+  - Visual
+  - VS
+  - Windows
+  - Developer Mode

@@ -1,0 +1,22 @@
+extends: existence
+message: "'%s' is jargon."
+ignorecase: true
+level: error
+tokens:
+  - in the affirmative
+  - in the negative
+  - agendize
+  - per your
+  - per your
+  - disincentivize
+  - at your earliest
+  - bilateral agreement
+  - de-prioritize
+  - implementation details
+  - need-to-know basis
+  - paradigm shift
+  - synergy
+  - technical debt
+  - value proposition
+  - x-ray analysis
+  - very

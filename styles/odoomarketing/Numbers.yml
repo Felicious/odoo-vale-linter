@@ -1,6 +1,0 @@
-extends: existence
-message: Spell out '%s', unless within an example or code block.
-level: suggestion
-nonword: true
-tokens:
-  - '([\s\n])(\d+)'
