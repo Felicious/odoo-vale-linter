@@ -11,11 +11,11 @@ jobs:
       - name: Install Go
         uses: actions/setup-go@v2
         with:
-          go-version: 1.17
+          go-version: 1.22
 
       - name: Install Vale
         run: |
-          go install github.com/errata-ai/vale/cmd/vale@latest
+          go install github.com/errata-ai/vale@latest
 
       - name: Run Vale
         run: |
