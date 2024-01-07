@@ -17,7 +17,10 @@ jobs:
         run: |
           go install github.com/errata-ai/vale@latest
 
-      - name: Run Vale
+      - name: Get vale version
         run: |
           vale --version
-          vale
+
+      - name: Run tests
+        run: |
+          go test -v ./test
