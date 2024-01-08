@@ -12,6 +12,18 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: '1.20'
+          check-latest: true
+          cache-dependency-path: |
+            go.sum
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install docutils (rst2html)
+        run: |
+          pip install docutils
 
       - name: Install Vale
         run: |
