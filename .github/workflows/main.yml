@@ -29,8 +29,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-          # caching pip dependencies
-          cache: 'pip'
 
       # Required by rst2html
       - name: Install docutils (rst2html)
