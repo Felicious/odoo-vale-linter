@@ -15,6 +15,16 @@ Automated tests utilize [go-cmdtest]. Testing is based on the [Vale styles][vale
 make test
 ```
 
+To run only one test
+```
+go test -v -run Test/testdata/AltTag/test .
+```
+
+To render the test output in html, call rst2html
+```
+/usr/local/bin/rst2html.py ./testdata/FutureTense/test.rst
+```
+
 ## Adding Tests
 
 Refer to the existing [sample test](./testdata/FutureTense/test.ct) and the [go-cmdtest] README for details on writing tests.
