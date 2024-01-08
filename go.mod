@@ -1,6 +1,6 @@
 module github.com/Felicious/odoo-vale-linter
 
-go 1.21.5
+go 1.21
 
 require github.com/google/go-cmdtest v0.4.0
 
