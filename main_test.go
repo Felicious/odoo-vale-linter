@@ -12,7 +12,7 @@ import (
 )
 
 func Test(t *testing.T) {
-	testdataDir, err := os.ReadDir("../testdata")
+	testdataDir, err := os.ReadDir("testdata")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -22,9 +22,10 @@ func Test(t *testing.T) {
 			continue
 		}
 
-		fmt.Printf("Running test: %s", dir.Name())
+		path := filepath.Join("testdata/", dir.Name())
+		fmt.Printf("Running test: %s", path)
 
-		doTest(dir.Name(), t)
+		doTest(path, t)
 	}
 }
 
