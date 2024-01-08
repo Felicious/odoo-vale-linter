@@ -1,10 +1,15 @@
 # Prose linter
 
 ## Install
+
 1. [Install Vale](https://vale.sh/docs/vale-cli/installation/).
-2. Fork this repository.
+2. Download this project
+   ```shell
+   git clone git@github.com:Felicious/odoo-vale-linter.git
+   ```
 
 ## To use
+
 1. In terminal, navigate to the folder where the `.vale.ini` file is located.
 2. Copy the absolute file of the file you'd like to run the test on. To do that, right-click   the
    desired RST file in VSCode, and select the **Copy Path** option from the drop-down menu.
