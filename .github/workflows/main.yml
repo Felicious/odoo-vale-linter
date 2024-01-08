@@ -1,0 +1,49 @@
+# This runs the vale tests on each push event to the repository.
+
+name: Run Vale Tests
+
+on:
+  # Run when commit are pushed and on PRs for any branch
+  push:
+  pull_request:
+
+jobs:
+  # Test job for vale
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the odoo-vale-linter repository
+      - uses: actions/checkout@v2
+
+      # Install Go for automated tests
+      - name: Install Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+          check-latest: true
+          cache-dependency-path: |
+            go.sum
+
+      # Python for docutils, Vale requires rst2html
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # Required by rst2html
+      - name: Install docutils (rst2html)
+        run: |
+          pip install docutils
+
+      - name: Install Vale
+        run: |
+          go install github.com/errata-ai/vale@latest
+
+      - name: Get vale version
+        run: |
+          vale --version
+
+      # Run go tests, see Makefile and main_test.go for details
+      - name: Run tests
+        run: |
+          make test

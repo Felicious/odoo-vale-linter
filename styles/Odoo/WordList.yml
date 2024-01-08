@@ -9,7 +9,7 @@ swap:
   "(?:API Console|dev|developer) key": API key
   "(?:cell ?phone|smart ?phone)": phone|mobile phone
   "(?:dev|developer|APIs) console": API console
-  "(?:dropdown|drop down)": drop down menu
+  "(?:dropdown|drop down)": drop-down menu
   "(?:e-mail|Email|E-mail)": email
   "(?:file ?path|path ?name)": path
   "(?:kill|terminate|abort)": stop|exit|cancel|end
@@ -38,7 +38,6 @@ swap:
   curated roles: predefined roles
   data are: data is
   disabled?: turn off|off
-  dropdown: drop down menu
   fewer data: less data
   file name: filename
   firewalls: firewall rules
@@ -53,6 +52,7 @@ swap:
   overview screen: recents screen
   regex: regular expression
   saas: Saas
+  sale order: sales order
   SHA1: SHA-1|HAS-SHA1
   sign into: sign in to
   sign-?on: single sign-on
