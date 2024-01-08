@@ -1,5 +1,5 @@
 extends: existence
-message: "Use an em dash ('—') instead of '–'."
+message: "Use an em dash ('—') instead of '%s'."
 link: ''
 nonword: true
 level: error
@@ -11,3 +11,4 @@ action:
     - '—'
 tokens:
   - '–'
+  - '--'

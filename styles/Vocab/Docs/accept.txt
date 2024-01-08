@@ -13,6 +13,7 @@ Odoo
 orphan
 preconfigured
 pricelist
+putaway
 SaaS
 show-content
 show-toc
