@@ -2,3 +2,6 @@ $ cdf ${ROOTDIR}
 $ vale --output=line --sort --normalize --relative --no-exit test.rst
 test.rst:1:10:Odoo.FutureTense:'will be' is future tense.
 test.rst:1:94:Odoo.FutureTense:'going to' is future tense.
+test.rst:4:6:Odoo.FutureTense:'will' is future tense.
+test.rst:4:45:Odoo.FutureTense:'shall' is future tense.
+test.rst:4:73:Odoo.FutureTense:'about to' is future tense.

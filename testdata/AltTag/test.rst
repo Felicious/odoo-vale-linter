@@ -4,4 +4,4 @@
 
 .. image:: win_loss/win-loss-ratio-bar-chart.png
    :align: center
-   :alt: With a period, the PeriodAlt test ignores this line, meow.
+   :alt: With a period, ignore this line, meow.
