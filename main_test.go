@@ -1,3 +1,10 @@
+// Based on errata-ai/packages
+// https://github.com/errata-ai/packages/blob/master/pkg/main_test.go
+//
+// MIT License
+//
+// Copyright (c) 2019 errata.ai
+
 package main
 
 import (
