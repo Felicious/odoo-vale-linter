@@ -2,8 +2,10 @@
 
 name: Run Vale Tests
 
-# Run on each time commits are pushed
-on: push
+on:
+  # Run when commit are pushed and on PRs for any branch
+  push:
+  pull_request:
 
 jobs:
   # Test job for vale
