@@ -7,7 +7,7 @@ assignees: Felicious
 
 ---
 
-**Copy and paste the sentence that the rule is or is not supposed to catch** 
+**Copy and paste the sentence that the rule is or is not supposed to catch**
 
 **Rule name**
 (e.g. "Odoo.Jargon")

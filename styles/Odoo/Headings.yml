@@ -18,6 +18,7 @@ exceptions:
   - macOS
   - Marketplace
   - MongoDB
+  - Odoo
   - REPL
   - Studio
   - TypeScript

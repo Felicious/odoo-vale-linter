@@ -5,6 +5,6 @@ LDFLAGS := -ldflags="-s -w"
 
 # Define the target for running tests
 test:
-	$(GO) test $(GOFLAGS) ./...
+	$(GO) test $(GOFLAGS) -count=1 ./...
 
 .PHONY: test
