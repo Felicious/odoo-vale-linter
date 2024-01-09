@@ -3,7 +3,7 @@
 ## Install
 
 1. [Install Vale](https://vale.sh/docs/vale-cli/installation/).
-2. Download this project
+2. Download this [project](https://github.com/Felicious/odoo-vale-linter)
    ```shell
    git clone git@github.com:Felicious/odoo-vale-linter.git
    ```
@@ -27,6 +27,7 @@
 2. **Repeats**: flag any double words one after another
 3. **Alt Tag**: Alt tag: flags that alt text should have a period
 4. **Future Tense**: suggest to not use it
+5. **Headings**: sentence case except for proper nouns and brands
 
 WIP rules
 1. Enforce sentence case on headings. Exceptions: capitalize Odoo if it's not the first word. Refer
