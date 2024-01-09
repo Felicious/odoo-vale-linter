@@ -1,0 +1,4 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:1:25:Odoo.Nonwords:Consider using 'consideration' instead of 'considaration'.
+test.rst:3:29:Odoo.Nonwords:Consider using 'their' instead of 'thier'.

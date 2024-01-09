@@ -1,0 +1,5 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:1:5:Odoo.Contraction:Use 'are not' instead of 'aren't'.
+test.rst:1:23:Odoo.Contraction:Use 'it is' instead of 'It's'.
+test.rst:4:7:Odoo.Contraction:Use 'would not' instead of 'wouldn't'.
