@@ -11,26 +11,22 @@
 ## To use
 
 1. In terminal, navigate to the folder where the `.vale.ini` file is located.
-2. Copy the absolute file of the file you'd like to run the test on. To do that, right-click   the
+2. Copy the absolute file of the file you'd like to run the test on. To do that, right-click the
    desired RST file in VSCode, and select the **Copy Path** option from the drop-down menu.
 
 3. In terminal, type `vale [absolute file path]`
 
-## Working rules
-1. **Alt Tag**: Raises an error when there isn't a period at the end of an image's alt tag.
-2. **No Future Case**: Suggests to not include "will" in sentences, unless it's to suggest potential options.
+## To contribute
+1. If a rule isn't behaving as expected, report it using the "Bug report" template under **Issues** --> **New issue**.
+2. Alternatively, improve existing rules in the `styles/Odoo` folder, or create new ones.
+3. Don't forget to [include tests](./TESTING.md) for your rule in the `testdata` folder.
 
-   <details>
-   <summary>Allowed example</summary>
-   ``Selecting the :guilabel:`Todo` filter option will generate a list of tasks to-do, with ...``
-   </details>
-
-3. **Sentence Case**: Enforces that all headings only have the first letter capitalized. Exceptions:
-   proper nouns (WIP)
-4. **Passive Voice**: Reminder to remove uncertain words like "may, possible, could" and keep the
-   writing focused on actively instructing the reader to do something.
-5. Singular Verb: Finds instances of a plural noun incorrectly used with "is" and suggests "are".
-   (e.g.: Companies is --> Companies are)
+## Tested rules
+1. **Spelling**: all words are spelled correctly
+   - Odoo terms that shouldn't be flagged by spellcheck are found in the `styles/Vocab/Docs/accept.txt` folder
+2. **Repeats**: flag any double words one after another
+3. **Alt Tag**: Alt tag: flags that alt text should have a period
+4. **Future Tense**: suggest to not use it
 
 WIP rules
 1. Enforce sentence case on headings. Exceptions: capitalize Odoo if it's not the first word. Refer

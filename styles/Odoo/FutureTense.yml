@@ -4,7 +4,7 @@ message: "'%s' is future tense."
 level: suggestion
 ignorecase: true
 tokens:
-  - will be
+  - will( |\n)be
   - will
   - shall
   - going( |\n)to
