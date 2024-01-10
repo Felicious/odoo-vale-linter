@@ -2,11 +2,20 @@
 
 ## Install
 
-1. [Install Vale](https://vale.sh/docs/vale-cli/installation/).
-2. Download this [project](https://github.com/Felicious/odoo-vale-linter)
+### Windows
+1. Open terminal, and type `choco`. If you see an error message, follow steps 2 and 3 to install [Chocolatey](https://chocolatey.org/install). Otherwise, skip directly to step 4.
+[Install Vale](https://vale.sh/docs/vale-cli/installation/).
+2. Download this [project](https://github.com/Felicious/odoo-vale-linter) by opening terminal.
    ```shell
    git clone git@github.com:Felicious/odoo-vale-linter.git
    ```
+
+### Linux
+1. Download [project](https://github.com/Felicious/odoo-vale-linter)
+   ```shell
+   git clone git@github.com:Felicious/odoo-vale-linter.git
+   ```
+
 
 ## To use
 
