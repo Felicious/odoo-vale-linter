@@ -34,7 +34,7 @@
    ```shell
    ./install.sh
    ```
-![linux successful install](/screenshots/linux-install.png)
+   ![linux successful install](/screenshots/linux-install.png)
 4. Once you're done, check Vale is correctly installed by typing:
    ```shell
    vale
@@ -56,6 +56,12 @@
 ## To use
 ### VS code extension
 1. Save a file (Ctrl + s) to make the suggestions show up.
+2. The number that appears in the tab of the file in VS code is the number of problems found.
+![num of issues](/screenshots/problems.png)
+3. Click the bar at the bottom to open the tab to view all of the things the tool found.
+![alerts](/screenshots/alerts.png)
+4. In the pop-up that opens, "problems" with the yellow alert symbols are warnings and things the writer should probably change. The blue info icon are suggestions for brevity and word choice that are up to the writer's discretion whether to apply the changes or not. Red 'x' icons represent errors that **must** be fixed.
+![how-to-use](/screenshots/problems-found.png)
 
 ### Terminal version
 1. In terminal, navigate to the folder where the `.vale.ini` file is located.
