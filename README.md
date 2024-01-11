@@ -3,19 +3,43 @@
 ## Install
 
 ### Windows
-1. Open terminal, and type `choco`. If you see an error message, follow steps 2 and 3 to install [Chocolatey](https://chocolatey.org/install). Otherwise, skip directly to step 4.
-[Install Vale](https://vale.sh/docs/vale-cli/installation/).
-2. Download this [project](https://github.com/Felicious/odoo-vale-linter) by opening terminal.
+1. When opening terminal, select "Run as admin". The top of the terminal window should say: "Administrator: Command Prompt"
+2. In terminal, run the [following command](https://docs.chocolatey.org/en-us/choco/setup#install-with-cmd.exe):
+   ```shell
+   @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+   ```
+3. Wait for it to download...
+![installing choco](/screenshots/choco-install.png)
+4. Then, type `choco` to confirm proper installation. You should see:
+![successful install](/screenshots/choco-success.png)
+5. Next, install vale by typing:
+   ```shell
+   choco install vale
+   ```
+   Type `y` and click `Enter` to accept the download
+![vale install success](/screenshots/vale-success.png)
+6. Navigate to the folder in terminal you'd like to download this [project](https://github.com/Felicious/odoo-vale-linter), and run
    ```shell
    git clone git@github.com:Felicious/odoo-vale-linter.git
    ```
+7. Navigate into the new 'odoo vale linter' folder that was just created in terminal. Test our odoo proofreader works properly by typing `vale`
 
 ### Linux
-1. Download [project](https://github.com/Felicious/odoo-vale-linter)
+1. Open terminal and `cd` to the folder you intend to store the vale project.
+2. Download the [project](https://github.com/Felicious/odoo-vale-linter) by typing:
    ```shell
    git clone git@github.com:Felicious/odoo-vale-linter.git
    ```
-
+3. Next, run a script to automatically download Vale, and type your password for your laptop when prompted.
+   ```shell
+   ./install.sh
+   ```
+![linux successful install](/screenshots/linux-install.png)
+4. Once you're done, check Vale is correctly installed by typing:
+   ```shell
+   vale
+   ```
+![vale prompt](/screenshots/vale-success-msg.png)
 
 ## To use
 
