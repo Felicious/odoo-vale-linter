@@ -41,8 +41,23 @@
    ```
 ![vale prompt](/screenshots/vale-success-msg.png)
 
-## To use
+## Add as VS code extension
+1. Open VS code and select the square icon to search for extensions.
+![open extension](/screenshots/extensions.png)
+2. Search for an install the "Vale VCode" extension.
+3. After installing, it's time to configure the vale extension to use our Odoo proofreading configurations. Open the VS code settings by clicking the gear icon > clicking Settings, or simply click "Ctrl + ,"
+![open settings](/screenshots/open-settings.png)
+4. In the User settings, select "Vale".
+5. In the "Vale CLI: Config" field, enter the absolute path to the `vale.ini` file from the odoo-vale-linter project. To get that path, open the odoo-vale-linter project in VS code, right click the `vale.ini` file and select "Copy Path".
+![copy path](/screenshots/vale-path.png)
+6. In the "Vale CLI: Path" field, enter the path to the vale app installed using choco or homebrew. It's *probably* `/bin/vale`
+![file configs](/screenshots/file-configs.png)
 
+## To use
+### VS code extension
+1. Save a file (Ctrl + s) to make the suggestions show up.
+
+### Terminal version
 1. In terminal, navigate to the folder where the `.vale.ini` file is located.
 2. Copy the absolute file of the file you'd like to run the test on. To do that, right-click the
    desired RST file in VSCode, and select the **Copy Path** option from the drop-down menu.
