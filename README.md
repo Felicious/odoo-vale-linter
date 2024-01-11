@@ -1,28 +1,82 @@
-# Prose linter
+# Odoo Documentation Vale Prose Linter
+
+This project contains the [Vale](https://vale.sh/) configuration for linting prose on RST files in the Odoo documentation.
 
 ## Install
 
+The following Mac, Windows, and Linux sections contain instructions on how to install Vale and configure it to use the **odoo-vale-linter** project as a style guide.
+
+### Mac
+
+To configure Vale on Mac, [Homebrew](https://brew.sh/) needs to be installed. To install Homebrew, run the following command in the terminal:
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Once Homebrew is installed, run the following command in the terminal to [install Vale](https://vale.sh/docs/vale-cli/installation/#package-managers):
+
+```shell
+brew install vale
+```
+
+To check that Vale is installed, run the following command in the terminal:
+
+```shell
+vale --version
+```
+
+Next, in the terminal, navigate to your `/github` folder using the `cd <path>` command to change your active directory. Once in `/github`, clone this repository to your local machine with the following command:
+
+```shell
+git clone git@github.com:Felicious/odoo-vale-linter.git
+```
+
+With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs-code-extension) section.
+
 ### Windows
-1. When opening terminal, select "Run as admin". The top of the terminal window should say: "Administrator: Command Prompt"
-2. In terminal, run the [following command](https://docs.chocolatey.org/en-us/choco/setup#install-with-cmd.exe):
-   ```shell
-   @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-   ```
-3. Wait for it to download...
+
+To configure Vale on Windows, [Chocolatey](https://chocolatey.org/) needs to be installed. To install Chocolatey, open a new terminal window as an administrator.
+
+> ℹ️ Tip:</br>
+> When opening terminal, select **Run as administrator**. The top of the terminal window should say: "Administrator: 'shell'".
+
+The installation commands depend on the command-line shell being used by your terminal:
+
+- [Install with cmd.exe](https://docs.chocolatey.org/en-us/choco/setup#install-with-cmd.exe)
+- [Install with PowerShell.exe](https://docs.chocolatey.org/en-us/choco/setup#install-with-powershell.exe)
+
+Once the installation script is ran, wait for Chocolatey to download.
+
 ![installing choco](/screenshots/choco-install.png)
-4. Then, type `choco` to confirm proper installation. You should see:
+
+Then, type `choco` to confirm proper installation. The installed version should be retured.
+
 ![successful install](/screenshots/choco-success.png)
-5. Next, install vale by typing:
-   ```shell
-   choco install vale
-   ```
-   Type `y` and click `Enter` to accept the download
+
+Next, install Vale by typing:
+
+```shell
+choco install vale
+```
+
+Type `y` and press `Enter` to accept the download.
+
 ![vale install success](/screenshots/vale-success.png)
-6. Navigate to the folder in terminal you'd like to download this [project](https://github.com/Felicious/odoo-vale-linter), and run
-   ```shell
-   git clone git@github.com:Felicious/odoo-vale-linter.git
-   ```
-7. Navigate into the new 'odoo vale linter' folder that was just created in terminal. Test our odoo proofreader works properly by typing `vale`
+
+To check that Vale is installed, run the following command in the terminal:
+
+```shell
+vale --version
+```
+
+Next, navigate to your `/github` folder using the `cd <path>` command to change your active directory. Once in `/github`, clone this repository to your local machine with the following command:
+
+```shell
+git clone git@github.com:Felicious/odoo-vale-linter.git
+```
+
+With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs-code-extension) section.
 
 ### Linux
 1. Open terminal and `cd` to the folder you intend to store the vale project.
@@ -41,17 +95,23 @@
    ```
 ![vale prompt](/screenshots/vale-success-msg.png)
 
-## Add as VS code extension
-1. Open VS code and select the square icon to search for extensions.
-![open extension](/screenshots/extensions.png)
-2. Search for an install the "Vale VCode" extension.
-3. After installing, it's time to configure the vale extension to use our Odoo proofreading configurations. Open the VS code settings by clicking the gear icon > clicking Settings, or simply click "Ctrl + ,"
-![open settings](/screenshots/open-settings.png)
-4. In the User settings, select "Vale".
-5. In the "Vale CLI: Config" field, enter the absolute path to the `vale.ini` file from the odoo-vale-linter project. To get that path, open the odoo-vale-linter project in VS code, right click the `vale.ini` file and select "Copy Path".
-![copy path](/screenshots/vale-path.png)
-6. In the "Vale CLI: Path" field, enter the path to the vale app installed using choco or homebrew. It's *probably* `/bin/vale`
+## Add as VS Code extension
+
+Open Visual Studio Code and install the [Vale VSCode](https://marketplace.visualstudio.com/items?itemName=ChrisChinchilla.vale-vscode) extension.
+
+Once installed, it's time to configure the vale extension to use the Odoo style configurations from the **odoo-vale-linter** repository.
+
+To do so, open the VS Code **Settings** and search for `Vale`. In the **User** tab for **Vale**, find the **Vale CLI: Config** field and enter the absolute path to the `.vale.ini` file from the **odoo-vale-linter** project.
+
 ![file configs](/screenshots/file-configs.png)
+
+> ℹ️ Tip:</br>
+> To get the absolute path of the `.vale.ini` file, open the **odoo-vale-linter** project in VS Code, right click the `.vale.ini` file and select **Copy Path**.</br>
+> ![copy path](/screenshots/vale-path.png)
+
+Be sure to also select the **Enable Spellcheck** option in the **Vale Settings**, as well as set the **Readability Problem Location** field to **Both**.
+
+With these settings, the **Vale VSCode** extension should now be configured and ready [to use](#to-use) with the **odoo-vale-linter** project to lint prose on RST files.
 
 ## To use
 ### VS code extension
