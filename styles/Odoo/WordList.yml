@@ -32,8 +32,7 @@ swap:
   authN: authentication
   authZ: authorization
   autoupdate: automatically update
-  checkbox: check box
-  check: select
+  check box|check-box: checkbox
   CLI: command-line tool
   curated roles: predefined roles
   data are: data is

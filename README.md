@@ -95,6 +95,16 @@ With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs
    ```
 ![vale prompt](/screenshots/vale-success-msg.png)
 
+## Update
+
+To update to the latest changes from this repository, simply pull the latest changes from the `master` branch.
+
+To do so, navigate to the **odoo-vale-linter** project folder in the terminal. Then, run the following command:
+
+```shell
+git pull origin master
+```
+
 ## Add as VS Code extension
 
 Open Visual Studio Code and install the [Vale VSCode](https://marketplace.visualstudio.com/items?itemName=ChrisChinchilla.vale-vscode) extension.

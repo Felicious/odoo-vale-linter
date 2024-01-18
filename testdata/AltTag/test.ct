@@ -1,3 +1,0 @@
-$ cdf ${ROOTDIR}
-$ vale --output=line --sort --normalize --relative --no-exit test.rst
-test.rst:1:1:Odoo.AltTag:Include a period at the end of an alt tag.

@@ -1,3 +1,1 @@
-Take the following into considaration:
-
-- These words are not words thier non-words.
+They love the colour pink and standardise the layout.
