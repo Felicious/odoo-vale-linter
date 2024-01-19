@@ -6,7 +6,7 @@
 set -e
 
 # Set the desired Vale version
-VALE_VERSION="2.28.0"
+VALE_VERSION="3.0.5"
 
 # Define the URL for the Vale binary
 VALE_URL="https://github.com/errata-ai/vale/releases/download/v$VALE_VERSION/vale_${VALE_VERSION}_Linux_64-bit.tar.gz"

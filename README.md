@@ -97,9 +97,15 @@ With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs
 
 ## Update
 
-To update to the latest changes from this repository, simply pull the latest changes from the `master` branch.
+This repository uses Vale `3.0.5`. Please make sure this version, or a version above, of Vale is installed by running `vale --version` in the terminal.
 
-To do so, navigate to the **odoo-vale-linter** project folder in the terminal. Then, run the following command:
+To update Vale, run the following command in the terminal depending on your operating system:
+
+- Mac: `brew upgrade vale`
+- Windows: `choco upgrade vale`
+- Linux:
+
+To update to the latest changes from this repository, simply pull the latest changes from the `master` branch by navigating to the **odoo-vale-linter** project folder in the terminal, and running the following command:
 
 ```shell
 git pull origin master
