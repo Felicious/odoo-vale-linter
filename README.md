@@ -73,27 +73,32 @@ vale --version
 Next, navigate to your `/github` folder using the `cd <path>` command to change your active directory. Once in `/github`, clone this repository to your local machine with the following command:
 
 ```shell
-git clone git@github.com:Felicious/odoo-vale-linter.git
+git clone https://github.com/Felicious/odoo-vale-linter.git
 ```
 
 With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs-code-extension) section.
 
 ### Linux
-1. Open terminal and `cd` to the folder you intend to store the vale project.
-2. Download the [project](https://github.com/Felicious/odoo-vale-linter) by typing:
+1. Open terminal and go to your `/github` folder using the `cd <path>` command to change your active directory.
+2. Once in `/github`, clone this [repository](https://github.com/Felicious/odoo-vale-linter) to your local machine by typing:
    ```shell
    git clone git@github.com:Felicious/odoo-vale-linter.git
    ```
-3. Next, run a script to automatically download Vale, and type your password for your laptop when prompted.
+3. Next, `cd` to `github/odoo-vale-linter`, run the following code, and enter your password when prompted:
    ```shell
    ./install.sh
    ```
    ![linux successful install](/screenshots/linux-install.png)
+> ℹ️ Tip:</br>
+> When typing your password, the terminal doesn't show anything you type, including ***.
+
 4. Once you're done, check Vale is correctly installed by typing:
    ```shell
-   vale
+   vale --version
    ```
 ![vale prompt](/screenshots/vale-success-msg.png)
+
+It should display "version 3.0.5".
 
 ## Update
 
@@ -103,7 +108,7 @@ To update Vale, run the following command in the terminal depending on your oper
 
 - Mac: `brew upgrade vale`
 - Windows: `choco upgrade vale`
-- Linux:
+- Linux: `./install.sh`
 
 To update to the latest changes from this repository, simply pull the latest changes from the `master` branch by navigating to the **odoo-vale-linter** project folder in the terminal, and running the following command:
 
@@ -126,6 +131,12 @@ To do so, open the VS Code **Settings** and search for `Vale`. In the **User** t
 > ![copy path](/screenshots/vale-path.png)
 
 Be sure to also select the **Enable Spellcheck** option in the **Vale Settings**, as well as set the **Readability Problem Location** field to **Both**.
+
+Then, enter the absolute path of Vale in the **Vale CLI: Path** field.
+
+> ℹ️ Tip:</br>
+> To get the absolute path of vale on a Linux or Mac OS, type `which vale` in terminal and copy the result.</br>
+> ![which vale](/screenshots/which-vale.png)
 
 With these settings, the **Vale VSCode** extension should now be configured and ready [to use](#to-use) with the **odoo-vale-linter** project to lint prose on RST files.
 
