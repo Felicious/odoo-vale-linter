@@ -84,7 +84,7 @@ With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs
    ```shell
    git clone git@github.com:Felicious/odoo-vale-linter.git
    ```
-3. Next, run a script to automatically download Vale, and type your password for your laptop when prompted.
+3. Next, `cd` to `github/odoo-vale-linter`, run the following code, and enter your password when prompted:
    ```shell
    ./install.sh
    ```
