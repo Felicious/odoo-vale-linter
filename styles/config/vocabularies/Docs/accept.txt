@@ -1,11 +1,14 @@
-[t/T]imesheet
-[t/T]imesheets
 classes
 code-column
 configurator
 custom-css
 custom-js
 hide-page-toc
+titlesonly
+show-content
+show-toc
+[t/T]imesheet
+[t/T]imesheets
 kanban
 massmails
 nosearch
@@ -15,8 +18,6 @@ preconfigured
 pricelist
 putaway
 SaaS
-show-content
-show-toc
 sublocation
 tradeshow
 unsubscription
