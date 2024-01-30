@@ -21,3 +21,8 @@ SaaS
 sublocation
 tradeshow
 unsubscription
+Todo
+[a/A]pprovers
+[URL/URLs]
+[h/H]elpdesk
+[c/C]hatbot

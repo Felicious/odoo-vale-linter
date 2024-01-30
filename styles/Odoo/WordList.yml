@@ -60,6 +60,6 @@ swap:
   synch: sync
   tablename: table name
   touch: tap
-  url: URL
+  url|Url: URL
   vs\.: versus
   World Wide Web: web
