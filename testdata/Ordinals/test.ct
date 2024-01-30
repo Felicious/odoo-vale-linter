@@ -1,0 +1,4 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:1:5:Odoo.Ordinals:Write out ordinals 'first' instead of '1st'
+test.rst:1:32:Odoo.Ordinals:Write out ordinals 'second' instead of '2nd'

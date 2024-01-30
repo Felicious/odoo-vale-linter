@@ -1,0 +1,30 @@
+extends: spelling
+message: "Did you really mean '%s'?"
+level: error
+custom: false
+filters:
+
+# ALLOWED WORDS
+  - '[aA]pprovers'
+  - 'Gantt'
+  - 'kanban'
+  - 'Odoo'
+  - '[fF]orecasted'
+  - '[sS]torable'
+  - '[dD]ropship(\b|ping\b)'
+  - '[uU]narchiv(e\b|ing\b)'
+
+# PLURAL ACRONYMS
+  - '\b([A-Z]{2,5})s\b'
+
+# META TAGS
+  - 'classes'
+  - 'code-column'
+  - 'configurator'
+  - 'custom-css'
+  - 'custom-js'
+  - 'hide-page-toc'
+  - 'nosearch'
+  - 'titlesonly'
+  - 'show-content'
+  - 'show-toc'

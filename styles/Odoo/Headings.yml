@@ -1,24 +1,20 @@
 extends: capitalization
 link: "https://www.odoo.com/documentation/latest/contributing/documentation/content_guidelines.html#titles-and-headings"
 message: "'%s' should use sentence-style capitalization."
-level: error
+level: suggestion
 scope: heading
 match: $sentence
-indicators:
-  - ":"
 exceptions:
   - Azure
   - CLI
-  - Cosmos
   - Docker
-  - Emmet
-  - gRPC
+  - Google
   - Kubernetes
   - Linux
   - macOS
   - Marketplace
+  - MRP
   - MongoDB
-  - Odoo
   - REPL
   - Studio
   - TypeScript
@@ -26,4 +22,3 @@ exceptions:
   - Visual
   - VS
   - Windows
-  - Developer Mode

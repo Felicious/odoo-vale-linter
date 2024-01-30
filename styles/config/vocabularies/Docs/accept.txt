@@ -1,28 +1,78 @@
-classes
-code-column
-configurator
-custom-css
-custom-js
-hide-page-toc
-titlesonly
-show-content
-show-toc
-[t/T]imesheet
-[t/T]imesheets
-kanban
-massmails
-nosearch
 Odoo
-orphan
-preconfigured
-pricelist
-putaway
-SaaS
-sublocation
-tradeshow
-unsubscription
-Todo
-[a/A]pprovers
-[URL/URLs]
-[h/H]elpdesk
-[c/C]hatbot
+Invoicing
+Accounting
+Consolidation
+bpost Shipping
+DHL Express Shipping
+Easypost Shipping
+Fedex Shipping
+Sendcloud Shipping
+Shiprocket Shipping
+UPS Shipping
+United States Postal Service (USPS) Shipping
+Employees
+Appraisals
+Attendances
+Employee Contracts
+Expenses
+Time Off
+Payroll
+Recruitment
+Employee Referral
+Skills Management
+Email Marketing
+SMS Marketing
+Point of Sale
+Restaurant
+Project
+To-Do
+Amazon Connector
+eBay Connector
+Sales
+Rental
+Subscriptions
+Inventory
+Barcode
+Studio
+Website
+Blog
+Events
+Forum
+Online Jobs
+Website Live Chat
+Newsletter Subscribe Button
+eCommerce
+eLearning
+Appointments
+\bApprovals
+Calendar
+Contacts
+CRM
+Data Recycle
+Documents
+ERP
+Fleet
+Frontdesk
+Helpdesk
+Live Chat
+Field Service
+Internet of Things
+Knowledge
+Lunch
+Discuss
+Maintenance
+Marketing Automation
+Manufacturing
+Product Lifecycle Management (PLM)
+Planning
+Purchase
+Quality
+Repairs
+Meeting Rooms
+Sign
+Social Marketing
+Surveys
+Timesheets
+VoIP
+Odoo WhatsApp Integration
+Shop Floor
