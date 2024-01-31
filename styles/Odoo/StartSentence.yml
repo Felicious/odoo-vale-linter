@@ -5,7 +5,7 @@ scope: paragraph
 action:
   name: remove
 tokens:
-  - ^But
-  - ^However
-  - ^There is
-  - ^There are
+  - But
+  - However
+  - There is
+  - There are
