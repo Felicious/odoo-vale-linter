@@ -1,27 +1,23 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
 link: ""
-level: warning
+level: suggestion
+scope:
+  - heading
+  - sentence
+  - list
 ignorecase: false
 action:
   name: replace
 swap:
-  "(?:API Console|dev|developer) key": API key
-  "(?:cell ?phone|smart ?phone)": phone|mobile phone
-  "(?:dev|developer|APIs) console": API console
-  "(?:dropdown|drop down)": drop-down menu
-  "(?:e-mail|Email|E-mail)": email
-  "(?:file ?path|path ?name)": path
-  "(?:kill|terminate|abort)": stop|exit|cancel|end
-  "(?:OAuth ?2|Oauth)": OAuth 2.0
-  "(?:ok|Okay)": OK|okay
-  "(?:WiFi|wifi)": Wi-Fi
+  '(?:API Console|dev|developer) key': API key
+  '(?:cell ?phone|smart ?phone)': phone|mobile phone
+  '(?:dev|developer|APIs) console': API console
+  '(?:e-mail|E-mail)': email
+  '(?:WiFi|wifi)': Wi-Fi
   '[\.]+apk': APK
   '3\-D': 3D
   'Google (?:I\-O|IO)': Google I/O
-  above: preceding
-  account name: username
-  action bar: app bar
   admin: administrator
   Ajax: AJAX
   a\.k\.a|aka: or|also known as
@@ -33,25 +29,23 @@ swap:
   authZ: authorization
   autoupdate: automatically update
   check box|check-box: checkbox
-  CLI: command-line tool
-  curated roles: predefined roles
+  drop down|dropdown: drop-down menu
   data are: data is
   disabled?: turn off|off
+  drag and drop: drag-and-drop
+  e-learning|Elearning: eLearning
   fewer data: less data
+  gantt: Gantt
   file name: filename
   firewalls: firewall rules
   functionality: capability|feature
   grayed-out: unavailable
-  HTTPs: HTTPS
+  http|https: HTTP|HTTPS
+  Kanban: kanban
   in order to: to
-  ingest: import|load
-  network IP address: internal IP address
-  omnibox: address bar
   open-source: open source
-  overview screen: recents screen
   regex: regular expression
   saas: Saas
-  sale order: sales order
   SHA1: SHA-1|HAS-SHA1
   sign into: sign in to
   sign-?on: single sign-on
@@ -60,6 +54,8 @@ swap:
   synch: sync
   tablename: table name
   touch: tap
+  top right: top-right
+  top left: top-left
   url|Url: URL
+  uom|UOM: UoM|Units of Measure
   vs\.: versus
-  World Wide Web: web

@@ -2,8 +2,6 @@ extends: existence
 message: "Do not start a paragraph with '%s'."
 level: error
 scope: paragraph
-action:
-  name: remove
 tokens:
   - But
   - However
