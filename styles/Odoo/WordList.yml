@@ -18,6 +18,7 @@ swap:
   '[\.]+apk': APK
   '3\-D': 3D
   'Google (?:I\-O|IO)': Google I/O
+  '(?:[^a-z]Kanban)': kanban
   admin: administrator
   Ajax: AJAX
   a\.k\.a|aka: or|also known as
@@ -41,7 +42,6 @@ swap:
   functionality: capability|feature
   grayed-out: unavailable
   http|https: HTTP|HTTPS
-  Kanban: kanban
   in order to: to
   open-source: open source
   regex: regular expression

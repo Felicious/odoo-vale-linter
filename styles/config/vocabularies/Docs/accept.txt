@@ -65,7 +65,7 @@ Marketing Automation
 Manufacturing
 Product Lifecycle Management (PLM)
 Planning
-Purchase
+[pP]urchase
 Quality
 Repairs
 Meeting Rooms

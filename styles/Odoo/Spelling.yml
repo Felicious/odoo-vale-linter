@@ -5,14 +5,18 @@ custom: false
 filters:
 
 # ALLOWED WORDS
+  - 'Axivox'
   - '[aA]pprovers'
+  - '[dD]ialplan'
   - 'Gantt'
-  - 'kanban'
+  - '[kK]anban'
+  - 'Linphone'
   - 'Odoo'
   - '[fF]orecasted'
   - '[sS]torable'
   - '[dD]ropship(\b|ping\b)'
   - '[uU]narchiv(e\b|ing\b)'
+  - 'Zoiper'
 
 # PLURAL ACRONYMS
   - '\b([A-Z]{2,5})s\b'
