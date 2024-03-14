@@ -4,6 +4,5 @@ level: error
 scope: paragraph
 tokens:
   - But
-  - However
   - There is
   - There are
