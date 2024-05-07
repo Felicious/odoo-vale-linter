@@ -29,7 +29,7 @@ vale --version
 Next, in the terminal, navigate to your `/github` folder using the `cd <path>` command to change your active directory. Once in `/github`, clone this repository to your local machine with the following command:
 
 ```shell
-git clone git@github.com:Felicious/odoo-vale-linter.git
+git clone https://github.com/Felicious/odoo-vale-linter.git
 ```
 
 With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs-code-extension) section.
