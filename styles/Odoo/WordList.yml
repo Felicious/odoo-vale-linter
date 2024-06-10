@@ -29,6 +29,7 @@ swap:
   authN: authentication
   authZ: authorization
   autoupdate: automatically update
+  canceled: cancelled
   check box|check-box: checkbox
   drop down|dropdown: drop-down menu
   data are: data is
@@ -44,6 +45,8 @@ swap:
   http|https: HTTP|HTTPS
   in order to: to
   open-source: open source
+  pre-configure|pre configure: preconfigure
+  pre-configured|pre configured: preconfigured
   regex: regular expression
   saas: Saas
   SHA1: SHA-1|HAS-SHA1
