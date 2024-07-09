@@ -3,5 +3,6 @@ message: "Double space in '%s' detected."
 link: ''
 level: error
 nonword: true
+vocab: false
 tokens:
   - '[^\s]+(?:\s{2,})[^\s]+'
