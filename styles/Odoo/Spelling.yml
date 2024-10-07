@@ -14,7 +14,10 @@ filters:
   - '[eE]xpensed'
   - '[fF]avorited'
   - '[fF]orecasted'
+  - '[gG]amification'
+  - '[oO]nboard(ing|ed)'
   - '[pP]reconfigure(|d)'
+  - '[pP]utaway'
   - '[rR]einvoiced'
   - '[sS]torable'
   - '[tT]imesheet(|s)'
@@ -27,7 +30,9 @@ filters:
   - 'Kanban'
   - 'Linphone'
   - 'Odoo'
+  - 'Sendcloud'
   - 'Zoiper'
+  - submenu
 
 # PLURAL ACRONYMS
   - '\b([A-Z]{2,5})s\b'
