@@ -2,167 +2,92 @@
 
 This project contains the [Vale](https://vale.sh/) configuration for linting prose on RST files in the Odoo documentation.
 
-## Install
+## 1. Clone This Repo
 
-The following Mac, Windows, and Linux sections contain instructions on how to install Vale and configure it to use the **odoo-vale-linter** project as a style guide.
+First, clone this project to the folder containing your GitHub repos:
 
-### Mac
-
-To configure Vale on Mac, [Homebrew](https://brew.sh/) needs to be installed. To install Homebrew, run the following command in the terminal:
-
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+github/
+├── odoo/
+│   └── documentation
+└── odoo-vale-linter <-- this repo
 ```
 
-Once Homebrew is installed, run the following command in the terminal to [install Vale](https://vale.sh/docs/vale-cli/installation/#package-managers):
-
-```shell
-brew install vale
-```
-
-To check that Vale is installed, run the following command in the terminal:
-
-```shell
-vale --version
-```
-
-Next, in the terminal, navigate to your `/github` folder using the `cd <path>` command to change your active directory. Once in `/github`, clone this repository to your local machine with the following command:
+Use the following command:
 
 ```shell
 git clone https://github.com/Felicious/odoo-vale-linter.git
 ```
 
-With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs-code-extension) section.
+## 2. Install and Update Vale
 
-### Windows
+Follow the installation instructions for your system here: https://vale.sh/docs/vale-cli/installation/#package-managers
 
-To configure Vale on Windows, [Chocolatey](https://chocolatey.org/) needs to be installed. To install Chocolatey, open a new terminal window as an administrator.
+### Update Vale
 
-> ℹ️ Tip:</br>
-> When opening terminal, select **Run as administrator**. The top of the terminal window should say: "Administrator: 'shell'".
+This repository uses Vale `3.7.0`. Please make sure this version, or a version above.
 
-The installation commands depend on the command-line shell being used by your terminal:
-
-- [Install with cmd.exe](https://docs.chocolatey.org/en-us/choco/setup#install-with-cmd.exe)
-- [Install with PowerShell.exe](https://docs.chocolatey.org/en-us/choco/setup#install-with-powershell.exe)
-
-Once the installation script is ran, wait for Chocolatey to download.
-
-![installing choco](/screenshots/choco-install.png)
-
-Then, type `choco` to confirm proper installation. The installed version should be retured.
-
-![successful install](/screenshots/choco-success.png)
-
-Next, install Vale by typing:
-
-```shell
-choco install vale
-```
-
-Type `y` and press `Enter` to accept the download.
-
-![vale install success](/screenshots/vale-success.png)
-
-To check that Vale is installed, run the following command in the terminal:
-
-```shell
-vale --version
-```
-
-Next, navigate to your `/github` folder using the `cd <path>` command to change your active directory. Once in `/github`, clone this repository to your local machine with the following command:
-
-```shell
-git clone https://github.com/Felicious/odoo-vale-linter.git
-```
-
-With the repository cloned, proceed to the [Add as VS Code extension](#add-as-vs-code-extension) section.
-
-### Linux
-1. Open terminal and go to your `/github` folder using the `cd <path>` command to change your active directory.
-2. Once in `/github`, clone this [repository](https://github.com/Felicious/odoo-vale-linter) to your local machine by typing:
-   ```shell
-   git clone git@github.com:Felicious/odoo-vale-linter.git
-   ```
-3. Next, `cd` to `github/odoo-vale-linter`, run the following code, and enter your password when prompted:
-   ```shell
-   ./install.sh
-   ```
-   ![linux successful install](/screenshots/linux-install.png)
-> ℹ️ Tip:</br>
-> When typing your password, the terminal doesn't show anything you type, including ***.
-
-4. Once you're done, check Vale is correctly installed by typing:
-   ```shell
-   vale --version
-   ```
-![vale prompt](/screenshots/vale-success-msg.png)
-
-It should display "version 3.0.5".
-
-## Update
-
-This repository uses Vale `3.0.5`. Please make sure this version, or a version above, of Vale is installed by running `vale --version` in the terminal.
+See the installed Vale version by running `vale --version` in the terminal.
 
 To update Vale, run the following command in the terminal depending on your operating system:
 
-- Mac: `brew upgrade vale`
-- Windows: `choco upgrade vale`
-- Linux: `./install.sh`
+- macOS: `brew upgrade vale`
+- Linux: `sudo snap refresh vale`
 
-To update to the latest changes from this repository, simply pull the latest changes from the `master` branch by navigating to the **odoo-vale-linter** project folder in the terminal, and running the following command:
+## 3. Install Vale VS Code extension
 
-```shell
-git pull origin master
-```
+Open VS Code and install the [Vale VSCode](https://marketplace.visualstudio.com/items?itemName=ChrisChinchilla.vale-vscode) extension.
 
-## Add as VS Code extension
+Once installed, configure the vale extension to use the Odoo style configurations from this repository.
 
-Open Visual Studio Code and install the [Vale VSCode](https://marketplace.visualstudio.com/items?itemName=ChrisChinchilla.vale-vscode) extension.
+To do so, open the VS Code **Settings** and search for `Vale`.
 
-Once installed, it's time to configure the vale extension to use the Odoo style configurations from the **odoo-vale-linter** repository.
+In the **User** tab for **Vale**, select the **Enable Spellcheck** option in the **Vale Settings**, as well as set the **Readability Problem Location** field to **Both**.
 
-To do so, open the VS Code **Settings** and search for `Vale`. In the **User** tab for **Vale**, find the **Vale CLI: Config** field and enter the absolute path to the `.vale.ini` file from the **odoo-vale-linter** project.
+Next, find the **Vale CLI: Config** field and enter the absolute path to the `.vale.ini` file from the **odoo-vale-linter** project.
 
-![file configs](/screenshots/file-configs.png)
+![file configs](/screenshots/vscode-vale-config.png)
 
 > ℹ️ Tip:</br>
-> To get the absolute path of the `.vale.ini` file, open the **odoo-vale-linter** project in VS Code, right click the `.vale.ini` file and select **Copy Path**.</br>
+> To get the absolute path of the `.vale.ini` file, open the **odoo-vale-linter** project in VS Code, right click the `.vale.ini` file and select **Copy Path** (do not click **Copy Relative Path**).</br></br>
 > ![copy path](/screenshots/vale-path.png)
 
-Be sure to also select the **Enable Spellcheck** option in the **Vale Settings**, as well as set the **Readability Problem Location** field to **Both**.
-
-Then, enter the absolute path of Vale in the **Vale CLI: Path** field.
+Next, enter the absolute path of Vale in the **Vale CLI: Path** field.
 
 > ℹ️ Tip:</br>
-> To get the absolute path of vale on a Linux or Mac OS, type `which vale` in terminal and copy the result.</br>
+> To get the absolute path of vale, type `which vale` in terminal and copy the result.</br></br>
 > ![which vale](/screenshots/which-vale.png)
 
-With these settings, the **Vale VSCode** extension should now be configured and ready [to use](#to-use) with the **odoo-vale-linter** project to lint prose on RST files.
+With these settings, the **Vale VSCode** extension should now be configured and [ready to use](#to-use) with the **odoo-vale-linter** project to lint prose on RST files.
 
-## To use
-### VS code extension
-1. Save a file (Ctrl + s) to make the suggestions show up.
-2. The number that appears in the tab of the file in VS code is the number of problems found.
-![num of issues](/screenshots/problems.png)
-3. Click the bar at the bottom to open the tab to view all of the things the tool found.
-![alerts](/screenshots/alerts.png)
-4. In the pop-up that opens, "problems" with the yellow alert symbols are warnings and things the writer should probably change. The blue info icon are suggestions for brevity and word choice that are up to the writer's discretion whether to apply the changes or not. Red 'x' icons represent errors that **must** be fixed.
-![how-to-use](/screenshots/problems-found.png)
+## Use Vale in VS Code
 
-### Terminal version
-1. In terminal, navigate to the folder where the `.vale.ini` file is located.
-2. Copy the absolute file of the file you'd like to run the test on. To do that, right-click the
-   desired RST file in VSCode, and select the **Copy Path** option from the drop-down menu.
+When an RST file is saved, the alerts that Vale detects display both inline in the RST and in the **Problems** tab in VS Code.
 
-3. In terminal, type `vale [absolute file path]`
+> ℹ️ Tip:</br>
+> Enable the **Problems** tab from **View --> Problems**.
+
+Alert level severity:
+
+1. :information_source: `Suggestion`: consider revising; double-check before ignoring.
+2. :warning: `Warning`: requires attention; should not be ignored.
+3. :x: `Error`:  critical format that must be addressed.
+
+
+Either correct the RST or use discretion to ignore the suggestion.
+
+![vale problems](/screenshots/vale-problems.png)
+
+---
 
 ## To contribute
-1. If a rule isn't behaving as expected, report it using the "Bug report" template under **Issues** --> **New issue**.
-2. Alternatively, improve existing rules in the `styles/Odoo` folder, or create new ones.
-3. Don't forget to [include tests](./TESTING.md) for your rule in the `testdata` folder.
+
+If a rule isn't behaving as expected, report it using the "Bug report" template under **Issues** --> **New issue**.
+
+Alternatively, improve existing rules in the `styles/Odoo` folder, or create new ones. Don't forget to [include tests](./TESTING.md) for your rule in the `testdata` folder.
 
 ## Tested rules
+
 1. **Spelling**: all words are spelled correctly
    - Odoo terms that shouldn't be flagged by spellcheck are found in the `styles/Vocab/Docs/accept.txt` folder
 2. **Repeats**: flag any double words one after another
@@ -184,7 +109,8 @@ WIP rules
   utmost, paramount, etc (can find you more)
 7. Error: sales jargon: TBD
 
-## Blocks and limitations ):
+## Blocks and limitations
+
 1. To understand rst, Vale converts rst to html, then uses html to [check scopes](https://vale.sh/docs/topics/scoping/#types-formats-and-scopes). This means, to check whether all elements in a `guilabel`, an rst-specific tag, for example, we first have to build the doc (run `make fast` in terminal), *inspect* the guilabel element, and see what is output. Answer: :guilabel:`Confirm` is rendered as `<span class="guilabel">Confirm</span>`. Since there are no ways to define span classes from the [scope list](https://vale.sh/docs/topics/scoping/#markup), there isn't an easy way to target guilabel, menuselection, and other rst-specific tags ): This might be better done using the Python linter and adding to Sam's make review project instead.
 2. To find out the part of speech of a sentence to set up a [sequence extension point](https://vale.sh/docs/topics/styles/#sequence) and control for grammar, run `vale tag [file name] en ""`. The endpoint (en "") is required to use this check.
 3. `:abbr:` rendered in markup is an abbr HTML element, which is unsupported by Vale. I think all text in abbr are ignored, as I couldn't find a token
