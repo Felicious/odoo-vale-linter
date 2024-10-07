@@ -55,8 +55,19 @@ Next, find the **Vale CLI: Config** field and enter the absolute path to the `.v
 Next, enter the absolute path of Vale in the **Vale CLI: Path** field.
 
 > ℹ️ Tip:</br>
-> To get the absolute path of vale, type `which vale` in terminal and copy the result.</br></br>
-> ![which vale](/screenshots/which-vale.png)
+> To get the absolute path of vale, type `which vale` in terminal and copy the result.
+> <details>
+> <summary>macOS</summary>
+>
+> ![which vale](/screenshots/which-vale-mac.png)
+>
+> </details>
+> <details>
+> <summary>Linux</summary>
+>
+> ![which vale](/screenshots/which-vale-linux.png)
+>
+> </details>
 
 With these settings, the **Vale VSCode** extension should now be configured and [ready to use](#to-use) with the **odoo-vale-linter** project to lint prose on RST files.
 
