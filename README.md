@@ -23,7 +23,7 @@ git clone https://github.com/Felicious/odoo-vale-linter.git
 
 Follow the installation instructions for your system here: https://vale.sh/docs/vale-cli/installation/#package-managers
 
-### Update Vale
+### Update Vale version
 
 This repository uses Vale `3.7.0`. Please make sure this version, or a version above.
 
@@ -33,6 +33,7 @@ To update Vale, run the following command in the terminal depending on your oper
 
 - macOS: `brew upgrade vale`
 - Linux: `sudo snap refresh vale`
+
 
 ## 3. Install Vale VS Code extension
 
@@ -88,6 +89,29 @@ Alert level severity:
 Either correct the RST or use discretion to ignore the suggestion.
 
 ![vale problems](/screenshots/vale-problems.png)
+
+## Update your local repo
+
+Be sure to frequently update your local repo to the latest changes.
+
+First, open a new **Terminal** window.
+
+Then navigate to the directory containing this repo, for example:
+
+```
+cd github/odoo-vale-linter
+```
+
+Next, pull the latest changes from origin:
+
+```
+git pull origin main
+```
+
+After the pull, your local instance of Vale will enforce the most up-to-date styles.
+
+> ℹ️ Tip:</br>
+> To be notified of changes to this repo, click the <svg aria-hidden="true" focusable="false" class="octicon octicon-eye" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path></svg> **Watch** button on the top-right of the repo, then select **All Activity**.
 
 ---
 
