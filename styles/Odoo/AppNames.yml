@@ -1,0 +1,105 @@
+extends: substitution
+message: "'%[2]s' app name should be bold: %[1]s."
+level: warning
+ignorecase: false
+scope:
+  - ~heading & ~alt
+action:
+  name: replace
+swap:
+  '(?<!\*\*)\b(Accounting)\b(?!\*\*)': '**Accounting**'
+  '(?<!\*\*)\b(Appointments)\b(?!\*\*)': '**Appointments**'
+  '(?<!\*\*)\b(Appraisals)\b(?!\*\*)': '**Appraisals**'
+  '(?<!\*\*)\b(Approvals)\b(?!\*\*)': '**Approvals**'
+  '(?<!\*\*)\b(Attendances)\b(?!\*\*)': '**Attendances**'
+  '(?<!\*\*)\b(Barcode)\b(?!\*\*)': '**Barcode**'
+  '(?<!\*\*)\b(CRM)\b(?!\*\*)': '**CRM**'
+  '(?<!\*\*)\b(Contacts)\b(?!\*\*)': '**Contacts**'
+  '(?<!\*\*)\b(Documents)\b(?!\*\*)': '**Documents**'
+  '(?<!\*\*)\b(eCommerce)\b(?!\*\*)': '**eCommerce**'
+  '(?<!\*\*)\b(eLearning)\b(?!\*\*)': '**eLearning**'
+  '(?<!\*\*)\b(Email Marketing)\b(?!\*\*)': '**Email Marketing**'
+  '(?<!\*\*)\b(Employee Referral)\b(?!\*\*)': '**Employee Referral**'
+  '(?<!\*\*)\b(Employees)\b(?!\*\*)': '**Employees**'
+  '(?<!\*\*)\b(Events)\b(?!\*\*)': '**Events**'
+  '(?<!\*\*)\b(Expenses)\b(?!\*\*)': '**Expenses**'
+  '(?<!\*\*)\b(Field Service)\b(?!\*\*)': '**Field Service**'
+  '(?<!\*\*)\b(Fleet)\b(?!\*\*)': '**Fleet**'
+  '(?<!\*\*)\b(Helpdesk)\b(?!\*\*)': '**Helpdesk**'
+  '(?<!\*\*)\b(Inventory)\b(?!\*\*)': '**Inventory**'
+  '(?<!\*\*)\b(Invoicing)\b(?!\*\*)': '**Invoicing**'
+  '(?<!\*\*)\b(Knowledge)\b(?!\*\*)': '**Knowledge**'
+  '(?<!\*\*)\b(Live Chat)\b(?!\*\*)': '**Live Chat**'
+  '(?<!\*\*)\b(Lunch)\b(?!\*\*)': '**Lunch**'
+  '(?<!\*\*)\b(Maintenance)\b(?!\*\*)': '**Maintenance**'
+  '(?<!\*\*)\b(Manufacturing)\b(?!\*\*)': '**Manufacturing**'
+  '(?<!\*\*)\b(Marketing Automation)\b(?!\*\*)': '**Marketing Automation**'
+  '(?<!\*\*)\b(Planning)\b(?!\*\*)': '**Planning**'
+  '(?<!\*\*)\b(PLM)\b(?!\*\*)': '**PLM**'
+  '(?<!\*\*)\b(Point of Sale)\b(?!\*\*)': '**Point of Sale**'
+  '(?<!\*\*)\b(Project)\b(?!\*\*)': '**Project**'
+  '(?<!\*\*)\b(Purchase)\b(?!\*\*)': '**Purchase**'
+  '(?<!\*\*)\b(Quality)\b(?!\*\*)': '**Quality**'
+  '(?<!\*\*)\b(Recruitment)\b(?!\*\*)': '**Recruitment**'
+  '(?<!\*\*)\b(Rental)\b(?!\*\*)': '**Rental**'
+  '(?<!\*\*)\b(Repair)\b(?!\*\*)': '**Repair**'
+  '(?<!\*\*)\b(Restaurant)\b(?!\*\*)': '**Restaurant**'
+  '(?<!\*\*)\b(Sales)\b(?!\*\*)': '**Sales**'
+  '(?<!\*\*)\b(Sign)\b(?!\*\*)': '**Sign**'
+  '(?<!\*\*)\b(SMS Marketing)\b(?!\*\*)': '**SMS Marketing**'
+  '(?<!\*\*)\b(Social Marketing)\b(?!\*\*)': '**Social Marketing**'
+  '(?<!\*\*)\b(Studio)\b(?!\*\*)': '**Studio**'
+  '(?<!\*\*)\b(Subscriptions)\b(?!\*\*)': '**Subscriptions**'
+  '(?<!\*\*)\b(Survey)\b(?!\*\*)': '**Survey**'
+  '(?<!\*\*)\b(Time Off)\b(?!\*\*)': '**Time Off**'
+  '(?<!\*\*)\b(Timesheets)\b(?!\*\*)': '**Timesheets**'
+  '(?<!\*\*)\b(Website)\b(?!\*\*)': '**Website**'
+
+# APP LIST:
+# Accounting
+# Appointments
+# Appraisals
+# Approvals
+# Attendances
+# Barcode
+# CRM
+# Contacts
+# Documents
+# eCommerce
+# eLearning
+# Email Marketing
+# Employee Referral
+# Employees
+# Events
+# Expenses
+# Field Service
+# Fleet
+# Helpdesk
+# Inventory
+# Invoicing
+# Knowledge
+# Live Chat
+# Lunch
+# Maintenance
+# Manufacturing
+# Marketing Automation
+# Planning
+# PLM
+# Point of Sale
+# Project
+# Purchase
+# Quality
+# Recruitment
+# Rental
+# Repair
+# Restaurant
+# Sales
+# Sign
+# SMS Marketing
+# Social Marketing
+# Studio
+# Subscriptions
+# Survey
+# Time Off
+# Timesheets
+# Website

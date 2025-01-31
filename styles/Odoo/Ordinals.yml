@@ -1,5 +1,5 @@
 extends: substitution
-message: Write out ordinals '%s' instead of '%s'
+message: "Write out ordinals '%s' instead of '%s'"
 level: warning
 ignorecase: false
 swap:

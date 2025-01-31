@@ -1,8 +1,9 @@
 extends: existence
-message: "Double space in '%s' detected."
-link: ''
+message: "'%s' should have one space."
 level: error
 nonword: true
-vocab: false
+scope:
+  - sentence
+  - raw
 tokens:
-  - '[^\s]+(?:\s{2,})[^\s]+'
+  - '([a-z]|[a-z][.?!]|[\-\-\>]|[\(\)]) {2,}([a-z]|[A-Z]|[\-\-\>]|[\(\)])'
