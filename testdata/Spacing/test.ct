@@ -1,12 +1,13 @@
 $ cdf ${ROOTDIR}
 $ vale --output=line --sort --normalize --relative --no-exit test.rst
-test.rst:1:15:Odoo.Spacing:Double space in 'has a' detected.
-test.rst:3:17:Odoo.Spacing:Double space in 'Create and' detected.
-test.rst:5:37:Odoo.Spacing:Double space in 'Configuration -->' detected.
-test.rst:7:13:Odoo.Spacing:Double space in 'Abbrevaition (ABBR)' detected.
-test.rst:10:12:Odoo.Spacing:Double space in 'a note' detected.
-test.rst:10:25:Odoo.Spacing:Double space in 'a double' detected.
-test.rst:13:15:Odoo.Spacing:Double space in 'has a' detected.
-test.rst:15:17:Odoo.Spacing:Double space in 'Create and' detected.
-test.rst:17:37:Odoo.Spacing:Double space in 'Configuration -->' detected.
-test.rst:29:44:Odoo.Spacing:Double space in 'has a' detected.
+test.rst:1:17:Odoo.Spacing:'s a' should have one space.
+test.rst:3:22:Odoo.Spacing:'e a' should have one space.
+test.rst:5:49:Odoo.Spacing:'n -' should have one space.
+test.rst:7:24:Odoo.Spacing:'n (' should have one space.
+test.rst:10:12:Odoo.Spacing:'a n' should have one space.
+test.rst:10:25:Odoo.Spacing:'a d' should have one space.
+test.rst:13:17:Odoo.Spacing:'s a' should have one space.
+test.rst:15:22:Odoo.Spacing:'e a' should have one space.
+test.rst:15:27:Odoo.Spacing:'d E' should have one space.
+test.rst:17:49:Odoo.Spacing:'n -' should have one space.
+test.rst:29:46:Odoo.Spacing:'s a' should have one space.

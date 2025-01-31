@@ -1,8 +1,3 @@
-The problem have been entered on a timesheet.
+The whole gamification thing is something.
 
-Log more time in timesheets to get more money.
-
-:nosearch:
-:show-content:
-
-Use the kanban view.
+We love kanbans!

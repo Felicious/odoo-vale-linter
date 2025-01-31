@@ -1,8 +1,9 @@
 extends: existence
-message: "Do not start a paragraph with '%s'."
-level: error
+message: "Avoid starting a paragraph with '%s'."
+level: warning
 scope: paragraph
 tokens:
   - But
   - There is
   - There are
+  - So

@@ -1,5 +1,5 @@
 extends: existence
-message: Avoid writing optional plurals '%s'
+message: "Avoid writing optional plurals '%s'"
 level: warning
 nonword: true
 tokens:

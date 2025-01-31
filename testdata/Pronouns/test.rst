@@ -1,2 +1,2 @@
-I should have some issues.
-You should know better.
+You should have some issues.
+Your words have power

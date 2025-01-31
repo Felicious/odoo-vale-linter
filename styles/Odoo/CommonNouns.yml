@@ -1,0 +1,25 @@
+extends: substitution
+message: "Don't capitalize %s unless directly referring to the UI, or part of active instructions."
+level: warning
+scope:
+  - sentence
+  - list
+ignorecase: false
+action:
+  name: replace
+swap:
+  Bill of Material: bill of materials
+  Bill of Materials: bill of materials
+  Blanket Order: blanket order
+  Blanket Orders: blanket orders
+  Delivery Order: delivery order
+  Delivery Orders: delivery orders
+  Engineering Change Order: engineering change order
+  Engineering Change Orders: engineering change orders
+  Manufacturing Order: manufacturing order
+  Manufacturing Orders: manufacturing orders
+  Purchase Order: purchase order
+  Purchase Orders: purchase orders
+  Quotations: quotations
+  Sale Order: sale order
+  Sales Order: sales order

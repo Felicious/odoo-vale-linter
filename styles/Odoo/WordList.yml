@@ -1,64 +1,27 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
-link: ""
-level: suggestion
-scope:
-  - heading
-  - sentence
-  - list
+level: error
 ignorecase: false
 action:
   name: replace
 swap:
-  '(?:API Console|dev|developer) key': API key
-  '(?:cell ?phone|smart ?phone)': phone|mobile phone
-  '(?:dev|developer|APIs) console': API console
-  '(?:e-mail|E-mail)': email
-  '(?:WiFi|wifi)': Wi-Fi
-  '[\.]+apk': APK
-  '3\-D': 3D
-  'Google (?:I\-O|IO)': Google I/O
-  'kanban': Kanban
-  admin: administrator
-  Ajax: AJAX
-  a\.k\.a|aka: or|also known as
-  android: Android
-  ios: iOS
-  iphone: iPhone
-  approx\.: approximately
-  authN: authentication
-  authZ: authorization
-  autoupdate: automatically update
-  canceled: cancelled
-  check box|check-box: checkbox
-  drop down|dropdown: drop-down menu
-  data are: data is
-  disabled?: turn off|off
-  drag and drop: drag-and-drop
-  e-learning|Elearning: eLearning
-  fewer data: less data
-  gantt: Gantt
-  file name: filename
-  firewalls: firewall rules
-  functionality: capability|feature
-  grayed-out: unavailable
-  http|https: HTTP|HTTPS
-  in order to: to
-  open-source: open source
-  pre-configure|pre configure: preconfigure
-  pre-configured|pre configured: preconfigured
-  regex: regular expression
-  saas: Saas
-  SHA1: SHA-1|HAS-SHA1
-  sign into: sign in to
-  sign-?on: single sign-on
-  static IP address: static external IP address
-  stylesheet: style sheet
-  synch: sync
-  tablename: table name
-  touch: tap
-  top right: top-right
+  check box: checkbox
+  check-box: checkbox
+  e-mail: email
+  E-mail: email
+  pre-configured: preconfigured
+  pre configured: preconfigured
+  drop down: drop-down
+  dropdown: drop-down
+  kanban: Kanban
+  odoo: Odoo
+  url: URL
   top left: top-left
-  url|Url: URL
-  uom|UOM: UoM|Units of Measure
-  vs\.: versus
+  top right: top-right
+  pop up: pop-up
+  pdf: PDF
+  http: HTTP
+  https: HTTPS
+  gantt: Gantt
+  oAuth: OAuth
+  oauth: OAuth

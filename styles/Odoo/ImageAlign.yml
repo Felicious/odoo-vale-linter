@@ -1,0 +1,9 @@
+extends: existence
+message: Consider removing '%s' from images
+level: warning
+scope:
+  - raw
+nonword: true
+ignorecase: true
+tokens:
+  - '(?:\:align: center)'

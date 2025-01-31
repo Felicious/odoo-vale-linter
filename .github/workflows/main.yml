@@ -37,7 +37,7 @@ jobs:
 
       - name: Install Vale
         run: |
-          go install github.com/errata-ai/vale/v3/cmd/vale@v3.0.7
+          go install github.com/errata-ai/vale/v3/cmd/vale@v3.9.0
 
       - name: Get vale version
         run: |

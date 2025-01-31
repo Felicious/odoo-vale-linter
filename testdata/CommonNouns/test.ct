@@ -1,0 +1,3 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:1:68:Odoo.CommonNouns:Don't capitalize 'delivery orders' unless directly referring to the UI, or part of active instructions.

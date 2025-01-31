@@ -1,0 +1,3 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:1:19:Odoo.Icons:Use the '(adjust settings)' descriptor.

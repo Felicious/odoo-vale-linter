@@ -1,14 +1,10 @@
 extends: existence
 message: "'%s' avoid pronouns."
-level: error
+level: warning
 ignorecase: true
 tokens:
-  - I
-  - me
-  - you
   - he/she
   - s/he
-  - \(s\)he
   - him
   - her
   - we

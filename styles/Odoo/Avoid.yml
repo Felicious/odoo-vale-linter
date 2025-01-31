@@ -1,0 +1,12 @@
+extends: existence
+message: "Avoid using '%s'"
+level: error
+ignorecase: true
+tokens:
+  - simpl(e|y)
+  - eas(y|ily)
+  - obviously
+  - quick(|ly)
+  - start off
+  - just
+  - a couple

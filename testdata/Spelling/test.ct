@@ -1,3 +1,2 @@
 $ cdf ${ROOTDIR}
 $ vale --output=line --sort --normalize --relative --no-exit test.rst
-test.rst:8:9:Odoo.Spelling:Did you really mean 'kanban'?

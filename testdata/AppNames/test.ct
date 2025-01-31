@@ -1,0 +1,4 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:1:9:Odoo.AppNames:'Studio' app name should be bold: '**Studio**'.
+test.rst:3:18:Odoo.AppNames:'Email Marketing' app name should be bold: '**Email Marketing**'.

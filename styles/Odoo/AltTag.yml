@@ -1,8 +1,7 @@
-extends: occurrence
+extends: existence
 message: "Include a period at the end of an alt tag."
 level: error
-ignorecase: true
 scope:
   - alt
-min: 1
-token: '\.$'
+tokens:
+  - '(^(.*?)(?<!\.)$)'
