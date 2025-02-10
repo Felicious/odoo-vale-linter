@@ -1,0 +1,3 @@
+styles/Odoo/*.yml linguist-detectable
+testdata/*.yml linguist-detectable
+testdata/*.rst linguist-detectable
