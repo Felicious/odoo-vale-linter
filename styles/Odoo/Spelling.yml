@@ -3,7 +3,7 @@ message: "Did you really mean '%s'?"
 level: error
 custom: false
 filters:
-# Add words here that are not included in the
+# Add words here that are not included in the default dictionary
   - '[aA]pprovers'
   - '[aA]xivox'
   - '[cC]hatbot(|s)'
@@ -34,6 +34,7 @@ filters:
   - '[tT]raceback(|s)'
   - '[uU]narchiv(e|ing)'
   - '[uU]nverifed'
+  - '[uU]psell(|s|ing)'
   - '[wW]orkcenter'
   - '[wW]ithholding(|s)'
   - '[zZ]oiper'
