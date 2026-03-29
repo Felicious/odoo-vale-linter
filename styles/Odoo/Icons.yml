@@ -1,5 +1,5 @@
 extends: substitution
-message: "Use the %s descriptor."
+message: "Use the %s descriptor. Always use the tooltip description if present."
 level: suggestion
 nonword: true
 scope: raw
@@ -76,7 +76,7 @@ swap:
   'fa-line-chart': (Line Chart)
   'fa-link': (Copy Link)
   'fa-list-ul': (list)
-  'fa-list': (list)
+  'fa-list': (list)|(Details)
   'fa-map-marker': (map marker)
   'fa-minus-square': (minus square)
   'fa-minus': (minus)
