@@ -37,6 +37,11 @@ Alternatively, improve existing rules in the `styles/Odoo` folder, or create new
 
 # Install Steps
 
+> ℹ️ Note:</br>
+> Steps 1 and 2 are not required if you have completed the [Odoo writer setup](https://github.com/Felicious/odoo-writer-setup). Vale is installed during writer setup.
+>
+> Proceed to [Step 3](#3-install-vale-vs-code-extension) to continue with Vale.
+
 ## 1. Clone This Repo
 
 First, clone this project to the folder containing your GitHub repos:
