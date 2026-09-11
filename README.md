@@ -11,6 +11,7 @@ This project contains the [Vale](https://vale.sh/) configuration for linting pro
 ## Odoo Styles
 
 - 🔴 [Alt Tag](./styles/Odoo/AltTag.yml): Alt tags should end in a period.
+- 🔴 [Alt Text Formatting](./styles/Odoo/AltTextFormatting.yml): Avoid bold, italics, quotes, or inline code/literal markup in alt text (read literally by screen readers).
 - 🟡 [App Names](./styles/Odoo/AppNames.yml): Odoo app names should use bold formatting.
 - 🟡 [Avoid](./styles/Odoo/Avoid.yml): Don't use phrases like "obviously, simply, quickly".
 - 🟡 [Common Nouns](./styles/Odoo/CommonNouns.yml): Don't capitalize common nouns (unless directly referring to the UI, or part of active instructions).
