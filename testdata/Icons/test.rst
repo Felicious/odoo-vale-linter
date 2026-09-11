@@ -1,1 +1,0 @@
-This is an :icon:`oi-settings-adjust` :guilabel:`(adjust)` icon.
