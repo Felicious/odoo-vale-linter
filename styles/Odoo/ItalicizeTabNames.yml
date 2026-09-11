@@ -1,0 +1,7 @@
+extends: existence
+message: "Italicize tab names instead of using :guilabel:: '%s'"
+level: suggestion
+scope: raw
+nonword: true
+tokens:
+  - ':guilabel:`[A-Z][^`]*`\s+tabs?\b'
