@@ -18,6 +18,7 @@ This project contains the [Vale](https://vale.sh/) configuration for linting pro
 - 🟡 [Contraction](./styles/Odoo/Contraction.yml): Avoid using contractions whenever possible.
 - 🟡 [Future Tense](./styles/Odoo/FutureTense.yml): Avoid writing in future tense.
 - 🟡 [Icon Descriptor Formatting](./styles/Odoo/IconDescriptorFormatting.yml): Bold the parentheses along with the icon descriptor, e.g. use `:icon:`fa-trash-o` :guilabel:`(trash)`` instead of `:icon:`fa-trash-o` (:guilabel:`trash`)`.
+- 🔴 [Icon Names](./styles/Odoo/IconNames.yml): Material Symbols icon names (e.g. `:icon:`settings``) must match a supported icon listed in `material_symbols_odoo_subset.rst`.
 - 🟡 [Image Align](./styles/Odoo/ImageAlign.yml): Consider removing `:align:` attribute from images.
 - 🔵 [Italicize Tab Names](./styles/Odoo/ItalicizeTabNames.yml): Italicize tab names instead of using `:guilabel:`, e.g. use `*Sales* tab` instead of `:guilabel:`Sales` tab`.
 - 🔴 [Nonwords](./styles/Odoo/Nonwords.yml): Common typos of English words.
