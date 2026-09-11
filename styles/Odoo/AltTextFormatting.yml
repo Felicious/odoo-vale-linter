@@ -1,0 +1,13 @@
+extends: existence
+message: "Avoid text formatting in alt text, it's read literally by screen readers: %s"
+level: error
+scope:
+  - alt
+nonword: true
+tokens:
+  - '\*\*[^*]+\*\*'
+  - '(?<!\*)\*(?!\*)[^*]+(?<!\*)\*(?!\*)'
+  - '``[^`]+``'
+  - '(?<!`)`(?!`)[^`]+(?<!`)`(?!`)'
+  - '"[^"]+"'
+  - "(?:^|(?<=\\s))'[^']+'(?=\\s|$|[.,!?;:])"
