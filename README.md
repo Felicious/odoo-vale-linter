@@ -17,6 +17,7 @@ This project contains the [Vale](https://vale.sh/) configuration for linting pro
 - 🟡 [Common Nouns](./styles/Odoo/CommonNouns.yml): Don't capitalize common nouns (unless directly referring to the UI, or part of active instructions).
 - 🟡 [Contraction](./styles/Odoo/Contraction.yml): Avoid using contractions whenever possible.
 - 🟡 [Future Tense](./styles/Odoo/FutureTense.yml): Avoid writing in future tense.
+- 🟡 [Icon Descriptor Formatting](./styles/Odoo/IconDescriptorFormatting.yml): Bold the parentheses along with the icon descriptor, e.g. use `:icon:`fa-trash-o` :guilabel:`(trash)`` instead of `:icon:`fa-trash-o` (:guilabel:`trash`)`.
 - 🟡 [Image Align](./styles/Odoo/ImageAlign.yml): Consider removing `:align:` attribute from images.
 - 🔴 [Nonwords](./styles/Odoo/Nonwords.yml): Common typos of English words.
 - 🟡 [Optional Plurals](./styles/Odoo/OptionalPlurals.yml): Avoid writing a sentence that adds an optional plural (s) to words.
