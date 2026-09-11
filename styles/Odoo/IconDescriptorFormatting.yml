@@ -1,0 +1,7 @@
+extends: existence
+message: "Bold the parentheses along with the icon descriptor: %s"
+level: warning
+scope: raw
+nonword: true
+tokens:
+  - '(?::icon:`[^`]+`\s*)+\(:guilabel:`[^`]+`\)'
