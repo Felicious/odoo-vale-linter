@@ -8,18 +8,41 @@ ignorecase: false
 action:
   name: replace
 swap:
+  Analytic Account: analytic account
+  Analytic Accounts: analytic accounts
   Bill of Material: bill of materials
   Bill of Materials: bill of materials
   Blanket Order: blanket order
   Blanket Orders: blanket orders
+  Company Contribution: company contribution
+  Credit Note: credit note
+  Credit Notes: credit notes
   Delivery Order: delivery order
   Delivery Orders: delivery orders
   Engineering Change Order: engineering change order
   Engineering Change Orders: engineering change orders
+  Fiscal Position: fiscal position
+  Fiscal Positions: fiscal positions
+  Journal Entry: journal entry
+  Journal Entries: journal entries
   Manufacturing Order: manufacturing order
   Manufacturing Orders: manufacturing orders
+  Net Cost: net cost
+  Payment Term: payment term
+  Payment Terms: payment terms
+  Product Variant: product variant
+  Product Variants: product variants
   Purchase Order: purchase order
   Purchase Orders: purchase orders
-  Quotations: quotations
+  Reordering Rule: reordering rule
+  Reordering Rules: reordering rules
+  Repair Order: repair order
+  Repair Orders: repair orders
   Sale Order: sale order
   Sales Order: sales order
+  Stock Move: stock move
+  Stock Moves: stock moves
+  Vendor Bill: vendor bill
+  Vendor Bills: vendor bills
+  Work Order: work order
+  Work Orders: work orders
