@@ -1,0 +1,5 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:15:11:Odoo.MissingIconDescriptor:Icon ':icon:`fa-cog`' has no text descriptor. Add one in parentheses, e.g. :icon:`fa-example` (:guilabel:`Example`), unless the icon is a smart button's own icon next to a :guilabel:`` that ends with "button".
+test.rst:17:34:Odoo.MissingIconDescriptor:Icon ':icon:`fa-star`' has no text descriptor. Add one in parentheses, e.g. :icon:`fa-example` (:guilabel:`Example`), unless the icon is a smart button's own icon next to a :guilabel:`` that ends with "button".
+test.rst:19:12:Odoo.MissingIconDescriptor:Icon ':icon:`fa-star`' has no text descriptor. Add one in parentheses, e.g. :icon:`fa-example` (:guilabel:`Example`), unless the icon is a smart button's own icon next to a :guilabel:`` that ends with "button".
