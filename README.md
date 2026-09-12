@@ -128,7 +128,7 @@ cd github/odoo-vale-linter
 Next, pull the latest changes from origin:
 
 ```
-git pull origin main
+git pull origin master
 ```
 
 After the pull, your local instance of Vale will enforce the most up-to-date styles.
