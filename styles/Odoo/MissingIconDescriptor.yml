@@ -1,0 +1,7 @@
+extends: existence
+message: "Icon '%s' has no text descriptor. Add one in parentheses, e.g. :icon:`fa-example` (:guilabel:`Example`), unless the icon is a smart button's own icon next to a :guilabel:`` that ends with \"button\"."
+level: suggestion
+scope: raw
+nonword: true
+tokens:
+  - '(?!(?::icon:`[^`]+`\s*)+\*{0,2}\(:guilabel:`[^`]+`\)\*{0,2})(?!(?::icon:`[^`]+`\s*)+:guilabel:`[^`]+`\s+(?:(?i:smart)\s+)?(?i:button)\b)(?!(?<=:guilabel:`[^`]+`\s{1,10}):icon:`[^`]+`\s+(?:(?i:smart)\s+)?(?i:button)\b):icon:`[^`]+`'
