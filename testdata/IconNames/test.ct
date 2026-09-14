@@ -1,0 +1,5 @@
+$ cdf ${ROOTDIR}
+$ vale --output=line --sort --normalize --relative --no-exit test.rst
+test.rst:5:11:Odoo.IconNames:':icon:`setttings`' doesn't match a supported Material Symbols icon name. Check material_symbols_odoo_subset.rst for the correct spelling.
+test.rst:9:11:Odoo.IconNames:':icon:`ac_untit`' doesn't match a supported Material Symbols icon name. Check material_symbols_odoo_subset.rst for the correct spelling.
+test.rst:19:11:Odoo.IconNames:':icon:`addbox`' doesn't match a supported Material Symbols icon name. Check material_symbols_odoo_subset.rst for the correct spelling.
